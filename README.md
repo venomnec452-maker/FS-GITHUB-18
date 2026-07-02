@@ -8,8 +8,8 @@
   <title>Untitled</title>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is a simple HTML document.</p>
+    <img src="GAME.jpg">
 </body>
 </html>
 ```
+![alt imagen_prueba](GAME.jpg)
