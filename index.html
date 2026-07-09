@@ -1,14 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub</title>
+    <title>EcoShop - Tu Tienda Sostenible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<br>
-<body>
-    <h1>Curso de GitHub ajuste desde el colaborador</h1>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold bg-gradient-to-r lg:text-3xl from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+                    EcoShop
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="text-emerald-600 border-b-2 border-emerald-600 pb-1">Inicio</a>
+                <a href="#productos" class="text-slate-600 hover:text-emerald-600 transition-colors">Productos</a>
+                <a href="#beneficios" class="text-slate-600 hover:text-emerald-600 transition-colors">Beneficios</a>
+                <a href="#contacto" class="text-slate-600 hover:text-emerald-600 transition-colors">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-slate-600 hover:text-emerald-600 relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    <span class="absolute top-1 right-1 bg-emerald-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                </button>
+                <button class="md:hidden p-2 text-slate-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative bg-emerald-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <span class="inline-block bg-emerald-800 text-emerald-300 font-semibold px-4 py-1.5 rounded-full text-sm">
+                    ✨ Nueva Colección 2026
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Productos conscientes para el día a día.
+                </h1>
+                <p class="text-emerald-100 text-lg max-w-xl mx-auto lg:mx-0">
+                    Cambia tu rutina con alternativas sustentables, duraderas y diseñadas con materiales 100% reciclados. Cuidar el planeta nunca se vio tan bien.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#productos" class="bg-white text-emerald-900 font-semibold px-8 py-3.5 rounded-xl shadow-lg hover:bg-emerald-50 transition-all text-center">
+                        Comprar Ahora
+                    </a>
+                    <a href="#beneficios" class="border border-emerald-400 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-emerald-800 transition-all text-center">
+                        Saber Más
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 sm:w-96 sm:h-96 bg-emerald-700/50 rounded-full absolute blur-2xl top-10"></div>
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600" alt="Estilo de vida eco" class="rounded-3xl shadow-2xl z-10 object-cover w-full max-w-md h-80 sm:h-96 transform hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124l-.208-3.33a1.5 1.5 0 0 0-1.402-1.402H15.75V10.5M10.5 19.5V3m0 0L7.5 6m3-3 3 3" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Envío Carbono Neutro</h3>
+                    <p class="text-slate-600 text-sm mt-1">Compensamos la huella de carbono de cada una de nuestras entregas a domicilio.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Materiales Reciclados</h3>
+                    <p class="text-slate-600 text-sm mt-1">Garantizamos el uso de plásticos rescatados del océano y algodón orgánico certificado.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Garantía de por Vida</h3>
+                    <p class="text-slate-600 text-sm mt-1">Diseñado para durar. Si algo le pasa, nosotros nos encargamos de repararlo o reciclarlo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Destacados de la Semana</h2>
+                <p class="text-slate-600 mt-2">Nuestros artículos más vendidos y mejor valorados por la comunidad.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+                    <div class="relative bg-slate-200 aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1514786115911-6b5ec173b053?auto=format&fit=crop&q=80&w=400" alt="Botella Térmica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-emerald-500 text-white font-semibold text-xs px-2.5 py-1 rounded-full">Top Ventas</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 hover:text-emerald-600 transition-colors cursor-pointer text-base">Botella Térmica de Acero</h3>
+                            <p class="text-slate-500 text-xs mt-1">Mantiene frío por 24 horas</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-slate-900">$29.99</span>
+                            <button class="bg-slate-900 hover:bg-emerald-600 text-white p-2.5 rounded-xl transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+                    <div class="relative bg-slate-200 aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=400" alt="Mochila de cáñamo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 hover:text-emerald-600 transition-colors cursor-pointer text-base">Mochila Urbana de Cáñamo</h3>
+                            <p class="text-slate-500 text-xs mt-1">Resistente al agua y 100% orgánica</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-slate-900">$54.50</span>
+                            <button class="bg-slate-900 hover:bg-emerald-600 text-white p-2.5 rounded-xl transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+                    <div class="relative bg-slate-200 aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&q=80&w=400" alt="Utensilios de bambú" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white font-semibold text-xs px-2.5 py-1 rounded-full">-15%</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 hover:text-emerald-600 transition-colors cursor-pointer text-base">Set de Cubiertos de Bambú</h3>
+                            <p class="text-slate-500 text-xs mt-1">Incluye estuche de transporte</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-bold text-slate-900">$12.75</span>
+                                <span class="text-xs text-slate-400 line-through">$15.00</span>
+                            </div>
+                            <button class="bg-slate-900 hover:bg-emerald-600 text-white p-2.5 rounded-xl transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+                    <div class="relative bg-slate-200 aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=400" alt="Jabón Orgánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 hover:text-emerald-600 transition-colors cursor-pointer text-base">Pack Jabones Artesanales</h3>
+                            <p class="text-slate-500 text-xs mt-1">Biodegradables y libres de crueldad</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xl font-bold text-slate-900">$18.00</span>
+                            <button class="bg-slate-900 hover:bg-emerald-600 text-white p-2.5 rounded-xl transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight sm:text-4xl">Sé parte del cambio</h2>
+            <p class="text-slate-600 mt-4 max-w-xl mx-auto">
+                Suscríbete a nuestra newsletter para recibir un <strong class="text-emerald-600">10% de descuento</strong> en tu primera compra y consejos semanales para una vida sostenible.
+            </p>
+            <form action="#" method="POST" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Introduce tu email" required class="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-slate-900">
+                <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-colors whitespace-nowrap">
+                    Unirse ahora
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p class="text-sm">
+                &copy; 2026 EcoShop Inc. Todos los derechos reservados.
+            </p>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+                <a href="#" class="hover:text-white transition-colors">Soporte</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
